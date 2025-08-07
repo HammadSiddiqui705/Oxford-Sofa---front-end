@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #333333; /* Main text, headings */
+  --Secondry-Color: #7C8B7E; /* Subtext, paragraph text */
+  --accent: #DCC9A6; /* Optional: borders, highlights */
+  --background: #FAF9F6; /* Page Background */
+  --cta: #C66B3D; /* Buttons*/
+  --cta-hover: #A3542D; /* When mouse hovers over the button */
+  --font-heading: "Poppins", sans-serif ;
+  --font-body: 'Inter', sans-serif;
+  --card: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Default */
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top    : 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--cta);
+}
+
+
+/* ******************************************* Navigation Bar *************************************************** */
+
+.nav-link {
+  color: white;
+  font-weight: 400;
+}
+
+.nav-logo img {
+  width: 50%;
+
+}
+
+.navbar-toggler-icon {
+  font-size: 25px;
+}
+
+
+.navbar {
+  background-color: #232b2b;
+  box-shadow: 0 3px 10px rgba(44, 62, 80, 0.6);
+}
+
+
+/* ******************************************* Comapreison Section *************************************************** */
+
+.sofa-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.comparison-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 30px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+table th {
+    font-weight: 500;
+}
+
+.btn {
+    width: 100%;
+    border: 2px solid #F1F5F9;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #F1F5F9;
+}
+
+/* ******************************************* Footer *************************************************** */
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 60px 0 10px;
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+.footer li {
+  color: var(--accent);
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: var(--accent);
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+
+/* ******************************************* Media Queries *************************************************** */
+
+@media(max-width: 991px) {
+  .side-bar {
+    background-color: rgba(253, 245, 245, 0.074);
+    backdrop-filter: blur(7px);
+  }
+
+  .navbar{
+    padding-top: 10px;
+  }
+
+  .nav-logo img{
+    width: 60%;
+  }
+
+  .nav-link {
+    color: white;
+    font-weight: 500;
+  }
+}
